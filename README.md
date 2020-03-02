@@ -5,6 +5,9 @@
 1. Нужен elasticsearch к которому будет потключаться one-shot сервис.
 
   docker pull docker.elastic.co/elasticsearch/elasticsearch:7.6.0
+
   docker run -p 9200:9200 -d --name es -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.6.0
 
 2. 
+  Создаем несколько json файлов для тестирования. Проверяем валидатором, что файлы не имеют синтаксических ошибок.
+  
