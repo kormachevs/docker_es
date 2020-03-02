@@ -1,0 +1,11 @@
+version: '3'
+services:
+  one-shot:
+    environment:
+      - ESDOMAIN=192.168.99.1
+      - ESPORT=9200
+    build: .
+    networks:
+      - es-net
+networks:
+  es-net:
