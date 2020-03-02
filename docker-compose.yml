@@ -2,7 +2,7 @@ version: '3'
 services:
   one-shot:
     environment:
-      - ESDOMAIN=192.168.99.1
+      - ESDOMAIN=es
       - ESPORT=9200
     build: .
     networks:
