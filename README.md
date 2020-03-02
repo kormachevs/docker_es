@@ -4,10 +4,7 @@
 Решение:
 1. Нужен elasticsearch к которому будет потключаться one-shot сервис.
 
-  а) Качаем образ
   docker pull docker.elastic.co/elasticsearch/elasticsearch:7.6.0
-  
-  б) Запускаем
   docker run -p 9200:9200 -d --name es -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:7.6.0
 
 2. 
